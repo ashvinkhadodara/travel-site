@@ -1,0 +1,611 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    
+    
+}
+.container{
+    padding: 50px 9%;
+}
+/* header  */
+#top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-top: 20px ;
+    padding-bottom: 20px ;
+    color: #fff;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+}
+#logo{
+    font-size: 2rem;
+}
+#logo span{
+    color: #ffa500;
+}
+
+#nav-bar .nav-ul li{
+    list-style: none;
+    float: left;
+    margin: 0px 5px ;
+
+}
+
+#nav-bar .nav-ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+   padding: 8px;
+    display: block;
+    position: relative;
+    transition: all .5s ease;
+}
+#nav-bar .nav-ul li a:hover{
+    color: #ffa500;
+}
+#nav-bar .nav-ul li a::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    height: 38px;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background: #ffa60063;
+    position: absolute;
+    transition: all .5s linear;
+}
+#nav-bar .nav-ul li a:hover::after{
+    
+    width: 100%;
+}
+#menu-icon{
+    font-size: 1.5rem;
+}
+#menu-icon .fas:hover{
+    color: #ffa500;
+}
+#menu-icon a{
+    color: #fff;
+}
+.fa-user-check{
+    margin-left: 15px;
+}
+/* picture */
+#picture {
+    background-image:linear-gradient( to bottom, rgba( 0, 0, 0, 0), rgba(0,0,0,.5)), 
+    url(../images/1.jpg) ;
+    
+    width: 100%;
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;   
+}
+#picture #texts{
+    position: absolute;
+    top: 35vh;
+    left: 25%;
+    text-align: center;
+}
+#picture #texts h1{
+    font-size: 2.5rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px #000;
+}
+#picture #texts h4{
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 15px 10px 0 0 ;
+    text-shadow: 2px 2px 6px #000;
+
+}
+#picture #texts button{
+    background-color: #ffa500;
+    margin: 10px ;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1rem;
+    border: 2px solid #ffa500;
+    outline: none;
+}
+#picture #texts button:hover{
+    background-color: #ffa50061;
+    
+}
+/* booknow section */
+
+.b-heading {
+    text-align: center;
+    margin-bottom:4%;
+   
+}
+h2 span{
+    font-size: 2.5rem;
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: #ffa500;
+    background-color: #ffA50033;
+}
+
+#book-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.img-side{
+    height: auto;
+    width: 500px;
+}
+.img-side img{
+    height: auto;
+    width: 100%;
+    padding-top: 1rem;
+}
+.form-side form{
+    box-shadow: 0 0px 10px rgb(0 0 0 / 10%);
+    padding: 1rem;
+    width: 500px;
+}
+#book-content .form-side form h3 ,input{
+    opacity: 50%;
+}
+
+.form-side form input{
+    
+    margin: 20px 0;
+    outline: none;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 1rem;
+}
+ button{
+    padding: 12px 35px;
+    color: #fff;
+    background-color: #ffa500;
+    border: none;
+    border: 2px solid #ffa500;
+    
+}
+button:hover{
+    color: #ffa500;
+    background-color: #ffA50033;
+   
+}
+/* packages section start */
+.p-heading h2{
+    text-align: center;
+    margin-bottom:4%;
+}
+#card-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    
+}
+.card{
+    box-shadow: 5px 5px 30px rgb(0 0 0 / 20%);   
+    width: 25vw;
+    transition: 1s ease ;
+    
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 70%);   
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    
+}
+.c-content{
+    margin: 20px;
+}
+.card p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.card h4 , .money{
+    font-size: 1.2rem;
+}
+.card .fas{
+    color: #ffa500;
+}
+/* services */
+.s-content{
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    justify-content: space-between;
+    
+}
+.s-card{
+    width: 25vw;
+    padding: 1rem;
+    transition: 1s ease;
+}
+.s-card:hover{
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px;
+}
+.s-icon{
+    font-size: 3rem;
+    color: #ffa500;
+}
+.s-card h2{
+    margin: 10px 0;
+    font-weight: 600;
+}
+.s-card p{
+    font-size: 0.9rem;
+    opacity: 60%;
+}
+/* gallery */
+#g-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+#g-main .pic{
+    height: auto;
+    width:330px;
+    height: 250px;
+    border: 10px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s ;
+}
+.pic img{
+    height: 100%;
+    width: 100%;
+    
+}
+/* review */
+#review{
+    margin-bottom: 50px ;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .five-star{
+    color: #ffa500;
+  }
+  .r-card{
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 20%);
+    width: 25vw;  
+    margin: 30px 0; 
+    padding-bottom: 20px;
+  }
+  .r-card img{
+    border-radius: 50%;  
+    height: 100px;
+    width: 100px;
+    margin:15px auto 15px;
+  }
+  .r-card p{
+      font-size: 1rem;
+      opacity: 70%;
+      margin: 15px 10px ;
+      line-height: 22px;
+  }
+
+/* contact */
+#c-header{
+    text-align: center;
+}
+#c-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.c-img{
+    width: 450px;
+}
+.c-img img{
+    height:auto;
+    width: 100%;
+}
+.c-form{
+    width: 550px;
+    padding:20px;
+    margin: 30px 0;
+}
+.c-form form{
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 1rem;
+}
+.c-form .input-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.c-form input , .c-form textarea{
+    opacity: 100%;
+    width: 49%;
+    padding: 10px;
+    margin: 10px 0px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    background-color: #f7f8f4;
+}
+#c-content .c-form textarea{
+    width: 100%;
+    height: 8rem;
+    
+    outline: none;
+    border: none;
+    resize: none;
+    background-color: #f7f4f4;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+/* brand section */
+#brand .b-card{
+    width: 150px;
+    margin: 30px 0;
+}
+/* footer */
+#f-main{
+    background-color:#333 ;
+    color: #fff;
+}
+#f-main #main-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#f-main #main-box .box{
+    max-width: 25vw;
+}
+#f-main #main-box .box p{
+    font-size: .9rem;
+    margin: 15px 0;
+    line-height: 1.5rem;
+}
+#f-main #main-box .box a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 15px 0;
+    font-size: .9rem;
+
+}
+#f-main #main-box .box a:hover{
+    color: #ffa500;
+}
+#f-main hr{
+    color: #fff;
+    margin: 15px 0;
+    
+}
+#f-main .last-title{
+    text-align: center;
+}
+#f-main .last-title a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#f-main .last-title span{
+    color: #ffa500;
+}
+#nav-bar.show{
+    left: 0;
+}
+div#burger-btn {
+    display: none;
+}
+/* responsive */
+@media screen and (max-width:1024px){
+    .container{
+        padding: 50px 2%;
+    }
+    #picture #texts{
+        left: 20%;
+    }
+    .img-side{
+        width: 480px;
+        
+    }
+    .form-side form{
+        width: 480px;
+    }
+    .card{
+        width:30vw;
+    }
+    #g-main .pic{
+        height: 220px;
+        width: 310px;
+    }
+    .c-img{
+        width: 400px;
+    }
+    .c-form{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:992px){
+    #picture #texts{
+        left: 15%;
+    }
+    .img-side{
+        width: 400px;
+    }
+    .form-side form{
+        width: 500px;
+    }
+    .form-side form input{
+        margin: 5px 0;
+
+    }
+    .r-card{
+        width: 80%;
+    }
+    .card{
+        width: 35vw;
+    }
+    .s-card{
+        width: 27vw;
+    }
+    #g-main .pic{
+        height: 20vh;
+        width: 38vw;
+    }
+    
+    #c-content .c-form textarea{
+        height: 3rem;
+    }
+}
+@media screen and (max-width:768px){
+    div#burger-btn {
+        display: inline-block;
+        font-size: 30px;
+    }
+    .container {
+        padding: 30px 2%;
+    }
+    #nav-bar {
+        position: absolute;
+        top: 76px;
+        left: -768px;
+        background-color: #333;
+        width: 100%;
+        transition: 0.5s left ease;
+    }
+    #nav-bar .nav-ul li{
+    margin: 0px;
+    float: none;
+    padding-left: 1%;
+    border-bottom: 1px solid #ccc;
+    }
+    #picture #texts{
+        left: 10%;
+    }
+    .img-side{
+        width: 100%;
+    }
+    .form-side{
+        width: 100%;
+    }
+    .form-side form{
+        width: 100%;
+    }
+    .card{
+        width: 45vw;
+    }
+    .s-card{
+        width: 45Vw;
+    }
+    #g-main .pic{
+        width: 45vw;
+        height: 35vw;
+    }
+    .r-card img{
+        height: 12vw;
+        width: 12vw;
+    }
+    .c-img{
+        width: 100%;
+    }
+    .c-form{
+        width: 100%;   
+    }
+}
+@media screen and (max-width:500px){
+    #top-bar{
+        position: static;
+    }
+    #picture #texts{
+        left: 2%;
+    }
+    h2 span{
+        font-size: 1.5rem;
+    }
+    .card{
+        width: 100%;
+    }
+    .s-card{
+        width: 100%;
+    }
+    #g-main .pic{
+        width: 100%;
+        height: auto;
+    }
+    .c-form{
+        padding: 0;
+    }
+    #f-main #main-box .box{
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    #f-main #main-box .box h2 {
+        margin: 25px 0 10px;
+    }
+    #f-main #main-box .box a{
+        display: inline;
+        margin: 0 3px;
+    }
+}
+@media screen and (max-width:320px){
+   
+    #picture #texts h1{
+        font-size: 1.5rem;
+    }
+    h2 span{
+        font-size: 1rem;
+        padding: 5px 7px;
+    }
+}
