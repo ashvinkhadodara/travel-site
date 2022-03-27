@@ -265,7 +265,6 @@ button:hover{
     gap: 20px;
 }
 #g-main .pic{
-    height: auto;
     width:330px;
     height: 250px;
     border: 10px solid #fff;
@@ -464,6 +463,9 @@ div#burger-btn {
     .card{
         width:30vw;
     }
+    #g-main{
+        justify-content:space-evenly;
+    }
     #g-main .pic{
         height: 220px;
         width: 310px;
@@ -500,8 +502,8 @@ div#burger-btn {
         width: 27vw;
     }
     #g-main .pic{
-        height: 20vh;
-        width: 38vw;
+        height: 220px;
+        width: 310px;
     }
     
     #c-content .c-form textarea{
@@ -549,8 +551,8 @@ div#burger-btn {
         width: 45Vw;
     }
     #g-main .pic{
-        width: 45vw;
-        height: 35vw;
+        width: 310px;
+        height: 220px;
     }
     .r-card img{
         height: 12vw;
@@ -581,7 +583,7 @@ div#burger-btn {
     }
     #g-main .pic{
         width: 100%;
-        height: auto;
+        height: 250px;
     }
     .c-form{
         padding: 0;
