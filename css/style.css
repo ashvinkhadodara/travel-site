@@ -570,9 +570,7 @@ div#burger-btn {
     }
 }
 @media screen and (max-width:500px){
-    /* #top-bar{
-        position: static;
-    } */
+
     #picture #texts{
         left: 2%;
     }
